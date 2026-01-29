@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <title>GitDev</title>
+</head>
+<body>
+
+    <div class="main-single">
+        <div class="header">
+            <!-- LOGO -->
+            <h1>GitDev</h1>
+
+            <!-- BATTLE MODE BUTTON -->
+            <Button class="battle-button" type="button">
+                <span>Battle mode</span>
+                <i class="fa-solid fa-bolt"></i>
+            </Button>
+        </div>
+
+        <!-- SEARCH SINGLE USER -->
+
+        <div class="single-search">
+            <div>
+                <i class="fa-solid search-icon fa-magnifying-glass"></i>
+                <input class="single-input" type="text" placeholder="Search user ex: roshansu">
+            </div>
+            <button class="single-mode-button" type="button">Search</button>
+        </div>
+
+        <!-- BATTLE SEARCH -->
+        <div class="battle-search">
+            <div>
+                <i class="fa-solid search-icon fa-magnifying-glass"></i>
+                <input id="b-search1" type="text" placeholder="Enter first user ex: roshansu">
+            </div>
+
+            <div>
+                <i class="fa-solid search-icon fa-magnifying-glass"></i>
+                <input id="b-search2" type="text" placeholder="Enter second user ex: shribhagwan7">
+            </div>
+
+            <button class="battle-mode-button" type="button">Search</button>
+        </div>
+
+        <!-- DISPLAY CARD FOR NON-BATTLE MODE -->
+         <h1 id="notify">Battle mode is on start searching user</h1>
+         <div id="root">
+            <p id="loading"></p>
+         </div>
+        <!-- <div class="single-card">
+            <img src="https://avatars.githubusercontent.com/u/6097?v=4" alt="">
+            <div class="main-card">
+                <div class="name-join">
+                    NAME
+                    <h2 id="name">Roshan</h2>
+
+                    JOINING DATE
+                    <p id="join-date">25 jan 2024</p>
+                </div>
+
+                <a class="lnk" id="user-github" target="_blank" href="#">
+                    <span>Github</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                BIO
+                <h3 class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aspernatur?</h3>
+                
+                DETAILS LIKE REPO, FOLLOWER, FOLLOWING
+                <div class="user-details">
+                    <div class="repo-div">
+                        <p>Repos</p>
+                        <p class="repo-count">206</p>
+                    </div>
+
+                    <div class="follower-div">
+                        <p>Followers</p>
+                        <p class="follower-count">267</p>
+                    </div>
+
+                    <div class="following-div">
+                        <p>Following</p>
+                        <p class="following-count">67</p>
+                    </div>
+                </div>
+
+                <div class="versus">
+                    <div class="total-star">
+                        <i class="fa-solid fa-star" style="color: #E2852E;"></i>
+                        <span>234</span>
+                    </div>
+
+                    <span class="result">Winner</span>
+                </div>
+
+                PORTFOLLIO & REPO LIST
+                 <div class="portfollio">
+                    <a id="blog-url" class="lnk" href="" target="_blank">
+                        <span>Portfollio</span>
+                        <i class="fa-solid fa-book"></i>
+                    </a>
+
+                    <button class="repos-button" type="button">
+                        View Repos
+                    </button>
+                 </div>
+
+                 REPOS LIST
+                <div class="repo-list">
+                    <a href="#">byteup</a>
+                    <a href="#">byteup</a>
+                    <a href="#">byteup</a>
+                    <a href="#">byteup</a>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

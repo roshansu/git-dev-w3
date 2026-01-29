@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+     font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.main-single{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* overflow-y: scroll; */
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header h1{
+    color: #1A3263;
+
+    font-weight: bold;
+}
+
+button{
+    all: unset;
+    /* color: white; */
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.battle-button{
+    border: 2px solid #740A03;
+    /* color: white; */
+    /* padding: 5px 10px 5px 10px; */
+}
+
+.battle-button:hover{
+    background: #740A03;
+    color: white;
+}
+
+.single-search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.single-search div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    background-color: #EAEFEF;
+    padding: 15px;
+    color: #576A8F;
+}
+
+.single-search div input{
+    all: unset;
+    width: 80%;
+    /* height: 50px; */
+    background-color: inherit;
+}
+
+.single-mode-button{
+    background-color: #1C4D8D;
+    color: white;
+    padding: 10px;
+
+}
+
+.single-mode-button:hover{
+    background-color: #4988C4;
+}
+
+.search-icon{
+    font-size: 20px;
+}
+
+.battle-search{
+    display: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.battle-search div{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 20px;
+    background-color: #EAEFEF;
+    padding: 15px;
+    color: #576A8F;
+}
+
+.battle-search div input{
+    all: unset;
+    width: 80%;
+    /* height: 50px; */
+    background-color: inherit;
+}
+
+.battle-mode-button{
+    background-color: #1C4D8D;
+    color: white;
+    padding: 10px;
+}
+
+.battle-mode-button:hover{
+    background-color: #4988C4;
+
+}
+
+.single-card{
+    display: flex;
+    /* width: 80%; */
+    gap: 20px;
+    background-color: #F5F2F2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 2px #FD7979;
+    margin-top: 20px;
+}
+
+img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: solid 3px #26CCC2;
+}
+
+.name-join{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-join h2{
+    font-weight: bold;
+}
+
+.name-join p{
+    color: #6d7377;
+}
+
+.lnk{
+    all: unset;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 7px 5px 7px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.bio{
+    max-width: 70%;
+    color: #57595B;
+}
+
+.user-details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: medium;
+    background-color: #76153C;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.repos-button{
+    background-color: #393D7E;
+    color: white;
+    margin-left: 20px;
+}
+
+.repos-button:hover{
+    background-color: #5459AC;
+}
+
+.repo-list{
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.repo-list a{
+    all: unset;
+    margin-top: 10px;
+    color: #301CA0;
+}
+
+.versus{
+    display: none;
+    align-items: center;
+    gap: 30px;
+    font-size: larger;
+
+}
+
+.total-star{
+    background-color: #F3E8DF;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.result{
+    background-color: #3BC1A8;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#notify{
+    display: none;
+}
+
+@media (width<700px) {
+    body{
+        margin: 20px;
+    }
+
+    .main-single{
+        width: 100%;
+    }
+
+    .single-search div{
+        padding: 10px;
+    }
+
+    .battle-search div{
+        padding: 10px;
+    }
+
+    i{
+        font-size: medium;
+    }
+
+    .battle-mode-button{
+        padding: 7px;
+    }
+    
+    .single-mode-button{
+        padding: 7px;
+    }
+
+    img{
+        align-self: center;
+    }
+
+    .single-card{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .bio{
+        width: 100%;
+    }
+
+    .repos-button{
+        margin: 20px 0px 0px 0px;
+        width: fit-content;
+    }
+
+
+}
