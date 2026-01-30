@@ -24,20 +24,20 @@ singleModeButton.addEventListener('click', async ()=>{
     singleInput.value = ''
     if(searchValue === '') return
     console.log(searchValue, singleInput)
-
+    // loading.style.display = 'block'
     const fetchedData =  await fetchUser(searchValue)
+    
     setUser(fetchedData)
 })
 
 async function fetchUser(searchValue) {
     try{
-        loading.style.display = 'block'
-        loading.innerHTML = `Searching for ${searchValue}`
+        loading.innerHTML = 'Searching...'
         const response = await fetch(`https://api.github.com/users/${searchValue}`)
         const finalData = await response.json()
         data = finalData
-        loading.style.display = 'none'
         console.log(finalData, finalData.avatar_url, finalData.followers, finalData.following)
+        loading.innerHTML = ''
         return finalData
     }catch(err){
         root.innerHTML = `Something went wrong ${err}`
