@@ -20,7 +20,7 @@ setUser(fetchedData)
 
 singleModeButton.addEventListener('click', async ()=>{
     root.innerHTML = ''
-    const searchValue = singleInput.value
+    const searchValue = singleInput.value.trim()
     singleInput.value = ''
     if(searchValue === '') return
     console.log(searchValue, singleInput)
@@ -260,8 +260,8 @@ battleButton.addEventListener('click', ()=>{
 })
 
 battleModeButton.addEventListener('click', ()=>{
-    const user1 = bSearch1.value
-    const user2 = bSearch2.value
+    const user1 = bSearch1.value.trim().toLowerCase()
+    const user2 = bSearch2.value.trim().toLowerCase()
 
     if(user1 === '' || user2 === '' ) return
 
